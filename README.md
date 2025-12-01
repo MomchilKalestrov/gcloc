@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Info
+
+Counts lines of code in a GitHub repository and visualizes them.
 
 ## Getting Started
 
