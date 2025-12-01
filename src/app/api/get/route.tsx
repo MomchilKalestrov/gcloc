@@ -45,6 +45,8 @@ const GET = async (request: NextRequest) => {
     const repo = searchParams.get('repo');
     const ref = searchParams.get('ref');
     const rootDir = searchParams.get('rootDir');
+    const width = Number(searchParams.get('width')) || 600;
+    const height = Number(searchParams.get('height')) || 600;
     
     if (!owner || !repo)
         return new NextResponse(null, {
@@ -184,8 +186,8 @@ const GET = async (request: NextRequest) => {
             </div>
         </div>,
         {
-            width: 600,
-            height: 400,
+            width,
+            height,
             fonts: [
                 {
                     name: 'Roboto',
